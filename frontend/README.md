@@ -6,9 +6,7 @@
 
 <details>
 <summary> 
-<button class="method GET">GET</button>
-<span class="path">/api/users</span>
-<span class="desc">Возвращает список пользователей</span>
+GET /api/users Возвращает список пользователей</span>
 </summary>
 
 ---
@@ -48,9 +46,7 @@ _No parameters_
 
 <details>
 <summary> 
-<button class="method POST">POST</button>
-<span class="path">/api/users</span>
-<span class="desc">Добавление пользователя</span>
+POST /api/users Добавление пользователя
 </summary>
 
 ---
@@ -68,8 +64,7 @@ _No parameters_
       string <br>
     </td>
     <td>
-      Логин пользователя <br>
-      <input placeholder="username" />
+      Логин пользователя
     </td>
   </tr>
   <tr>
@@ -78,8 +73,7 @@ _No parameters_
       string <br>
     </td>
     <td>
-      Пароль пользователя <br>
-      <input placeholder="password" type="password" />
+      Пароль пользователя
     </td>
   </tr>
 </table>
@@ -110,45 +104,3 @@ _No parameters_
 ---
 
 </details>
-
-<style type="text/css" rel="stylesheet">
-details{
-  margin-top: 5px;
-}
-summary::marker,
-summary::-webkit-details-marker {
-  
-}
-.GET{
-  background-color: #1391FF;
-}
-.POST{
-  background-color: #009D77;
-}
-.PUT{
-  background-color: #E97500;
-}
-.DELETE{
-  background-color: #CF3030;
-}
-.method{
-  border-radius: 3px;
-  color:#fff;
-  width:80px;
-  padding: 6px 0;
-  font-weight: 700
-}
-.path{
-  color: #3b4151;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 0 10px;
-  user-select: none;
-}
-.desc{
-  color: #3b4151;
-  font-size: 13px;
-  font-weight: 600;
-  user-select: none;
-}
-</style>
