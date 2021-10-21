@@ -111,7 +111,7 @@ _No parameters_
 
 </details>
 
-<style>
+<style type="text/css" rel="stylesheet">
 details{
   margin-top: 5px;
 }
