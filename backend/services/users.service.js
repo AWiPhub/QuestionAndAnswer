@@ -26,7 +26,8 @@ class UsersService {
         "INSERT INTO users (username, password) VALUES (?,?)",
         [username, password],
         function (err, data) {
-          if (err) return console.log(err);
+          if (err) return res(false);
+          return res({ message: "User created." });
         }
       );
     });
@@ -37,7 +38,16 @@ class UsersService {
   }
 
   deleteUser(data) {
-    return new Promise((res, rej) => {});
+    return new Promise((res, rej) => {
+      pool.query(
+        "DELETE FROM users WHERE id=?",
+        [data.id],
+        function (err, data) {
+          if (err) return res(false);
+          return res({ message: "User deleted." });
+        }
+      );
+    });
   }
 }
 
